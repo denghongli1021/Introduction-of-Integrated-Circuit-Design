@@ -1,4 +1,4 @@
-# HW and Final Project in <積體電路設計概論Introduction of Integrated Circuit Design 11310CS312000>  
+# <積體電路設計概論Introduction of Integrated Circuit Design 11310CS312000>  
 
 ## HW1 
 HSPICE simulation  
