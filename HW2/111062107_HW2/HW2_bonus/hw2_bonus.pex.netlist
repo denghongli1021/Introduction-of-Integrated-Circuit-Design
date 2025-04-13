@@ -1,0 +1,44 @@
+* File: hw2_bonus.pex.netlist
+* Created: Sat Nov 23 22:33:00 2024
+* Program "Calibre xRC"
+* Version "v2020.2_14.12"
+* 
+.include "hw2_bonus.pex.netlist.pex"
+.subckt HW2_BONUS  B A S C VDD GND
+* 
+* GND	GND
+* VDD	VDD
+* C	C
+* S	S
+* A	A
+* B	B
+M0 N_6_M0_d N_C_M0_g N_GND_M0_s N_GND_M0_b N_18 L=1.8e-07 W=1e-06 AD=5.8e-13
++ AS=5.7e-13 PD=2.16e-06 PS=2.14e-06
+M1 N_2_M1_d N_6_M1_g N_B_M1_s N_GND_M0_b N_18 L=1.8e-07 W=1e-06 AD=5.6e-13
++ AS=5.9e-13 PD=2.12e-06 PS=2.18e-06
+M2 N_2_M2_d N_B_M2_g N_6_M2_s N_GND_M0_b N_18 L=1.8e-07 W=1e-06 AD=5.6e-13
++ AS=5.9e-13 PD=2.12e-06 PS=2.18e-06
+M3 N_9_M3_d N_2_M3_g N_GND_M3_s N_GND_M0_b N_18 L=1.8e-07 W=1e-06 AD=5.8e-13
++ AS=5.7e-13 PD=2.16e-06 PS=2.14e-06
+M4 N_S_M4_d N_9_M4_g N_A_M4_s N_GND_M0_b N_18 L=1.8e-07 W=1e-06 AD=5.6e-13
++ AS=5.9e-13 PD=2.12e-06 PS=2.18e-06
+M5 N_S_M5_d N_A_M5_g N_9_M5_s N_GND_M0_b N_18 L=1.8e-07 W=1e-06 AD=5.6e-13
++ AS=5.9e-13 PD=2.12e-06 PS=2.18e-06
+M6 N_6_M6_d N_C_M6_g N_VDD_M6_s N_VDD_M6_b P_18 L=1.8e-07 W=2.07e-06
++ AD=1.1799e-12 AS=1.2006e-12 PD=3.21e-06 PS=3.23e-06
+M7 N_2_M7_d N_C_M7_g N_B_M7_s N_VDD_M6_b P_18 L=1.8e-07 W=2.07e-06 AD=1.1592e-12
++ AS=1.2213e-12 PD=3.19e-06 PS=3.25e-06
+M8 N_2_M8_d N_B_M8_g N_C_M8_s N_VDD_M6_b P_18 L=1.8e-07 W=2.07e-06 AD=1.1592e-12
++ AS=1.2213e-12 PD=3.19e-06 PS=3.25e-06
+M9 N_9_M9_d N_2_M9_g N_VDD_M9_s N_VDD_M6_b P_18 L=1.8e-07 W=2.07e-06
++ AD=1.1799e-12 AS=1.2006e-12 PD=3.21e-06 PS=3.23e-06
+M10 N_S_M10_d N_2_M10_g N_A_M10_s N_VDD_M6_b P_18 L=1.8e-07 W=2.07e-06
++ AD=1.1592e-12 AS=1.2213e-12 PD=3.19e-06 PS=3.25e-06
+M11 N_S_M11_d N_A_M11_g N_2_M11_s N_VDD_M6_b P_18 L=1.8e-07 W=2.07e-06
++ AD=1.1592e-12 AS=1.2213e-12 PD=3.19e-06 PS=3.25e-06
+*
+.include "hw2_bonus.pex.netlist.HW2_BONUS.pxi"
+*
+.ends
+*
+*
